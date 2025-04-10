@@ -13,7 +13,7 @@ public class ExtradamageDamageHandler extends EnchantmentDamageHandler {
 
 	@Override
 	public void onDamage(LivingEntity target, Player damager, int level) {
-		PotionEffect potionEffect = new PotionEffect(getPotionEffectType(), 50, level);
+		PotionEffect potionEffect = new PotionEffect(getPotionEffectType(), 190, level);
 		damager.addPotionEffect(potionEffect);
 		target.damage(1.0, damager);
 		damager.getWorld().playEffect(target.getLocation(), POTION_BREAK, 12, 7);
